@@ -1,0 +1,35 @@
+.join_wrap {
+  width: 600px;
+  margin: 50px auto;
+  padding: 32px;
+  background-color: var(--gray8);
+  border-radius: 10px;
+}
+.input_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 32px;
+}
+.input_wrap > label {
+  color: var(--primary);
+}
+.member_button_wrap > button {
+  width: 100%;
+}
+.check_msg {
+  color: var(--text2);
+  font-size: 14px;
+}
+.check_msg.invalid {
+  color: var(--danger);
+}
+.input_item {
+  display: flex;
+  gap: 12px;
+}
+.input_item > input {
+  width: auto;
+  height: 100%;
+  flex-grow: 1;
+}

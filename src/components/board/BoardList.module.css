@@ -1,0 +1,69 @@
+.board_list_wrap {
+  display: flex;
+  list-style-type: none;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.board_item {
+  width: calc((100% - 30px * 2) / 3); /*요소가 꽉 차게 들어가게 계산*/
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.board_item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.board_img_wrap {
+  width: 250px;
+  height: 250px;
+  align-self: center;
+}
+.board_img_wrap > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /*비율 유지하면서 크기 맞춤*/
+}
+.board_info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.board_title {
+  padding: 8px;
+  font-family: gs_b;
+  white-space: nowrap; /*제목이 너무 길면 숨기기 위한 코드*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board_sub_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.board_sub_info p {
+  font-size: 14px;
+}
+.board_writer {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.board_writer > div {
+  background-color: var(--gray6);
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 4px;
+}
+.board_writer > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

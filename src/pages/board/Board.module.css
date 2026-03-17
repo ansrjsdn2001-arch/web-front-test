@@ -1,0 +1,42 @@
+.board_wrap {
+  width: 1000px;
+  margin: 50px auto;
+  border-radius: 10px;
+  background-color: var(--gray8);
+  padding: 32px;
+}
+.board_list_pagination {
+  margin-top: 30px;
+}
+.list_option_wrap {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.select {
+  outline: none;
+  padding: 8px 12px;
+  appearance: none;
+  width: 100px;
+}
+
+.search_wrap {
+  display: flex;
+  gap: 2px;
+  width: 400px;
+}
+.search_wrap > button {
+  width: 100px;
+}
+.write_btn_zone {
+  display: flex;
+  justify-content: flex-end;
+  margin: 12px 0px;
+}
+.btn_wrap {
+  width: 800px;
+  margin: 50px auto;
+}
+.btn_wrap > button {
+  width: 100%;
+}
